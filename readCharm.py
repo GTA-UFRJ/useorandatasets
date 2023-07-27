@@ -15,5 +15,6 @@ def read_iq_values_from_binary_file(filename,num_elements):
 # Example usage
 if __name__ == "__main__":
     filename = "../CLEAR.bin"  # Replace with the actual file path
-    iq_values = read_iq_values_from_binary_file(filename,40)
+    numberIQSamples=2 # Replace with the number of IQ samples you want to read
+    iq_values = read_iq_values_from_binary_file(filename,numberIQSamples*2)
     print(iq_values)
